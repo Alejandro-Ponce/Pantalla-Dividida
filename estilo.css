@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #f7ae12;
+}
+
+.contenedor{
+    color: rgb(0, 0, 0);
+    display: flex;
+    height: 100vh;
+}
+
+.contenedor__derecho img{
+    width: 50vw;
+    height: 100vh;
+}
+
+.contenedor__izquierdo{
+    margin: 5%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contenedor__izquierdo__titulo{
+    font-size: 350%;
+    font-weight: 500;
+    background: linear-gradient(to bottom, black 50%, white 50%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.contenedor__izquierdo_parrafo{
+    font-size: 150%;
+    font-weight: 300;
+
+}
+
+.contenedor__izquierdo__boton{
+    padding:2% 0%;
+    width: 18%;
+    color: white;
+    background:transparent;
+    border: 3px solid #ffffff;
+    border-radius: 35px;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media (max-width: 510px){
+    .contenedor{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .contenedor__derecho img{
+        width: 100vw;
+        height: 100%;
+    }
+
+    .contenedor__izquierdo{
+        width: 90%;
+        margin: 5%;
+        align-items: center;
+    }
+    
+    .contenedor__izquierdo__titulo{
+        font-size: 250%;
+    }
+    .contenedor__izquierdo_parrafo{
+        font-size: 120%;
+        font-weight: 300;
+    
+    }
+
+    .contenedor__izquierdo__boton{
+        width: 100%;
+        border-radius: 20px;
+
+    }
+
+
+}
+
+@media (max-width: 1025px){
+    .contenedor{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .contenedor__derecho img{
+        width: 100vw;
+        height: 100%;
+    }
+
+    .contenedor__izquierdo{
+        width: 90%;
+        margin: 6%;
+        align-items: center;
+    }
+    
+    .contenedor__izquierdo__titulo{
+        font-size: 400%;
+    }
+    .contenedor__izquierdo_parrafo{
+        font-size: 200%;
+        font-weight: 300;
+    
+    }
+
+    .contenedor__izquierdo__boton{
+        margin-top: 1%;
+        width: 50%;
+        border-radius: 20px;
+
+    }
+
+
+}
